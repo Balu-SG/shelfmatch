@@ -5,7 +5,7 @@ import { tagProducts } from "@/lib/tagger";
 import type { Product } from "@/lib/types";
 
 export const runtime = "nodejs";
-export const maxDuration = 300;
+export const maxDuration = 60;
 
 const MAX_PRODUCTS = 250;
 
