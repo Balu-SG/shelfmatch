@@ -4,7 +4,7 @@
 
 Built for the YouCam API Skin AI & eCommerce VTO Hackathon.
 
-**Live demo:** _added after deploy_
+**Live demo:** https://shelfmatch-sigma.vercel.app · **Code:** https://github.com/Balu-SG/shelfmatch
 
 ## Try it (no setup)
 
