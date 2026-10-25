@@ -1,0 +1,81 @@
+{
+ "_note": "SYNTHETIC oily-skin mock in the real v2.1 JSON shape (see skin-analysis.real.json). Used for the no-key demo and routine tests.",
+ "status": 200,
+ "data": {
+  "task_status": "success",
+  "results": {
+   "output": [
+    {
+     "type": "acne",
+     "ui_score": 71,
+     "raw_score": 68.2
+    },
+    {
+     "type": "pore",
+     "ui_score": 52,
+     "raw_score": 44.9
+    },
+    {
+     "type": "wrinkle",
+     "ui_score": 84,
+     "raw_score": 81.0
+    },
+    {
+     "type": "texture",
+     "ui_score": 63,
+     "raw_score": 57.3
+    },
+    {
+     "type": "redness",
+     "ui_score": 77,
+     "raw_score": 72.5
+    },
+    {
+     "type": "oiliness",
+     "ui_score": 41,
+     "raw_score": 35.8
+    },
+    {
+     "type": "moisture",
+     "ui_score": 66,
+     "raw_score": 60.1
+    },
+    {
+     "type": "radiance",
+     "ui_score": 58,
+     "raw_score": 51.4
+    },
+    {
+     "type": "age_spot",
+     "ui_score": 80,
+     "raw_score": 76.6
+    },
+    {
+     "type": "dark_circle_v2",
+     "ui_score": 55,
+     "raw_score": 49.0
+    },
+    {
+     "type": "eye_bag",
+     "ui_score": 74,
+     "raw_score": 70.2
+    },
+    {
+     "type": "firmness",
+     "ui_score": 86,
+     "raw_score": 83.9
+    },
+    {
+     "type": "all",
+     "score": 67.25,
+     "url": null
+    },
+    {
+     "type": "skin_age",
+     "score": 29,
+     "url": null
+    }
+   ]
+  }
+ }
+}

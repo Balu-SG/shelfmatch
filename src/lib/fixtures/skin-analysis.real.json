@@ -1,0 +1,137 @@
+{
+ "status": 200,
+ "data": {
+  "error": null,
+  "results": {
+   "output": [
+    {
+     "ui_score": 65,
+     "mask_urls": [
+      "https://example.invalid/mask/eye_bag.jpg"
+     ],
+     "raw_score": 44.724446535110474,
+     "type": "eye_bag",
+     "url": null
+    },
+    {
+     "ui_score": 62,
+     "mask_urls": [
+      "https://example.invalid/mask/firmness.jpg"
+     ],
+     "raw_score": 38.3497029542923,
+     "type": "firmness",
+     "url": null
+    },
+    {
+     "ui_score": 71,
+     "mask_urls": [
+      "https://example.invalid/mask/redness.jpg"
+     ],
+     "raw_score": 59.08147430419922,
+     "type": "redness",
+     "url": null
+    },
+    {
+     "ui_score": 79,
+     "mask_urls": [
+      "https://example.invalid/mask/texture.jpg"
+     ],
+     "raw_score": 76.83752775192261,
+     "type": "texture",
+     "url": null
+    },
+    {
+     "ui_score": 80,
+     "mask_urls": [
+      "https://example.invalid/mask/pore.jpg"
+     ],
+     "raw_score": 78.83416450023651,
+     "type": "pore",
+     "url": null
+    },
+    {
+     "ui_score": 83,
+     "mask_urls": [
+      "https://example.invalid/mask/oiliness.jpg"
+     ],
+     "raw_score": 86.54692840576172,
+     "type": "oiliness",
+     "url": null
+    },
+    {
+     "ui_score": 76,
+     "mask_urls": [
+      "https://example.invalid/mask/radiance.jpg"
+     ],
+     "raw_score": 70.19560933113098,
+     "type": "radiance",
+     "url": null
+    },
+    {
+     "ui_score": 78,
+     "mask_urls": [
+      "https://example.invalid/mask/age_spot.jpg"
+     ],
+     "raw_score": 85.40386962890625,
+     "type": "age_spot",
+     "url": null
+    },
+    {
+     "ui_score": 64,
+     "mask_urls": [
+      "https://example.invalid/mask/wrinkle.jpg"
+     ],
+     "raw_score": 46.48118317127228,
+     "type": "wrinkle",
+     "url": null
+    },
+    {
+     "ui_score": 72,
+     "mask_urls": [
+      "https://example.invalid/mask/moisture.jpg"
+     ],
+     "raw_score": 54.16560173034668,
+     "type": "moisture",
+     "url": null
+    },
+    {
+     "ui_score": 73,
+     "mask_urls": [
+      "https://example.invalid/mask/dark_circle_v2.jpg"
+     ],
+     "raw_score": 71.71310186386108,
+     "type": "dark_circle_v2",
+     "url": null
+    },
+    {
+     "ui_score": 88,
+     "mask_urls": [
+      "https://example.invalid/mask/acne.jpg"
+     ],
+     "raw_score": 92.29713000000001,
+     "type": "acne",
+     "url": null
+    },
+    {
+     "score": 74.25,
+     "type": "all",
+     "url": null
+    },
+    {
+     "score": 62,
+     "type": "skin_age",
+     "url": null
+    },
+    {
+     "mask_urls": [
+      "https://example.invalid/mask/resize_image.jpg"
+     ],
+     "type": "resize_image",
+     "url": null
+    }
+   ]
+  },
+  "task_status": "success"
+ },
+ "_note": "REAL YouCam v2.1 SD response (2026-10-23) for a synthetic StyleGAN face; signed mask URLs replaced."
+}

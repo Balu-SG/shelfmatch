@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Luxury-beauty design tokens: ivory and warm stone, deep olive, a hint of gold. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-body);
   --font-mono: var(--font-geist-mono);
-}
+  --font-serif: var(--font-display), Georgia, serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ivory: #fbf8f3; /* page */
+  --color-cream: #f5f0e8; /* raised neutral */
+  --color-sand: #ebe3d7; /* hairlines, fills */
+  --color-stone: #d6cbbb;
+  --color-ink: #1c1915;
+  --color-muted: #776d63;
+  --color-brand: #2f3b2e; /* deep olive */
+  --color-gold: #a8875a;
+  --color-clay: #b4553f;
+  --color-amber: #c58a2b;
+  --color-sage: #4f7a5a;
+
+  --shadow-soft: 0 1px 2px rgb(28 25 21 / 0.04), 0 8px 24px -8px rgb(28 25 21 / 0.08);
+  --shadow-lift: 0 2px 4px rgb(28 25 21 / 0.04), 0 24px 48px -16px rgb(28 25 21 / 0.18);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: rgb(168 135 90 / 0.25);
+}
+
+.font-serif {
+  letter-spacing: -0.015em;
+  font-weight: 500;
+  /* Playfair defaults to old-style figures; data needs even, lining numbers. */
+  font-feature-settings: "lnum" 1;
+}
+
+svg text {
+  font-feature-settings: "lnum" 1;
+}
+
+/* Small caps-style eyebrow labels */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@keyframes scanline {
+  0% { top: 0%; }
+  50% { top: calc(100% - 3px); }
+  100% { top: 0%; }
+}
+.scanline {
+  animation: scanline 2.4s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0% { transform: translateY(-30%); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(130%); opacity: 0; }
+}
+.sweep {
+  animation: sweep 3.6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% { r: 3; opacity: 0.9; }
+  100% { r: 12; opacity: 0; }
+}
+.pulse-ring {
+  animation: pulse-ring 2.2s ease-out infinite;
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-up {
+  animation: fade-up 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scanline, .sweep, .pulse-ring, .float-y, .fade-up { animation: none; }
 }
